@@ -17,6 +17,7 @@ const Wrapper = styled.View`
   justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
+  margin-bottom: 10%;
 `;
 const HeaderText = styled.Text`
   color: ${theme.pallete.color};

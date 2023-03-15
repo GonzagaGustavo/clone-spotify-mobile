@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/native";
+import lastPlaylists from "../../assets/images/lastPlaylists";
 import Layout from "../layout";
 import theme from "../styles/theme";
 import Header from "./header";
@@ -8,27 +9,27 @@ import LastPlaylistCard, { Playlist } from "./lastPlaylistCard";
 const data: Playlist[] = [
   {
     name: "Hip Hop",
-    img: "hiphop.jpeg",
+    img: lastPlaylists.hiphop,
   },
   {
     name: "This Is Drake",
-    img: "thisisdrake.jpeg",
+    img: lastPlaylists.thisisdrake,
   },
   {
     name: "On Repeat",
-    img: "onrepeat.jpg",
+    img: lastPlaylists.onrepeat,
   },
   {
     name: "Liked Songs",
-    img: "liked.png",
+    img: lastPlaylists.liked,
   },
   {
     name: "Electronic",
-    img: "eletronic.jpeg",
+    img: lastPlaylists.eletronic,
   },
   {
     name: "Till We Drop",
-    img: "tillwedrop.jpeg",
+    img: lastPlaylists.tillwedrop,
   },
 ];
 
@@ -46,6 +47,8 @@ export default function Home() {
 }
 
 const LastPlaylistsWrapper = styled.View`
+  padding-left: 5px;
+  padding-right: 5px;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
