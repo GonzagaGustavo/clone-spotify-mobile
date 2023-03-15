@@ -7,8 +7,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 }
 
 const Body = styled.View`
+  padding-top: 15%;
   flex: 1;
   background-color: ${theme.pallete.background};
-  align-items: center;
-  justify-content: center;
+  font-family: "CircularStd-Medium";
 `;
