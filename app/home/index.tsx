@@ -4,6 +4,7 @@ import assets from "@/assets";
 import Layout from "../layout";
 import Header from "./header";
 import LastPlaylistCard, { Playlist } from "./lastPlaylistCard";
+import Filters from "./filters";
 
 const data: Playlist[] = [
   {
@@ -36,6 +37,7 @@ export default function Home() {
   return (
     <Layout>
       <Header />
+      <Filters />
       <LastPlaylistsWrapper>
         {data.map((playlist, index) => (
           <LastPlaylistCard playlist={playlist} key={index} />

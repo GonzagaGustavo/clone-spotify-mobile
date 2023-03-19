@@ -25,7 +25,7 @@ export default function App() {
       <Navigator
         screenOptions={{
           tabBarStyle: {
-            backgroundColor: theme.pallete.background,
+            backgroundColor: "rgb(0, 0, 0, 0.1)",
             height: 60,
           },
         }}

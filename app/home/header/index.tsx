@@ -8,9 +8,13 @@ export default function Header() {
     <Wrapper>
       <HeaderText>Good afternoon</HeaderText>
       <IconsWrapper>
-        <Ionicons name="ios-notifications-outline" size={24} color="black" />
-        <Octicons name="history" size={24} color="black" />
-        <AntDesign name="setting" size={24} color={theme.pallete.color} />
+        <Ionicons
+          name="ios-notifications-outline"
+          size={26}
+          color={theme.pallete.color}
+        />
+        <Octicons name="history" size={26} color={theme.pallete.color} />
+        <AntDesign name="setting" size={26} color={theme.pallete.color} />
       </IconsWrapper>
     </Wrapper>
   );
@@ -18,15 +22,20 @@ export default function Header() {
 
 const Wrapper = styled.View`
   flex-direction: row;
+  align-items: baseline;
   justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 `;
 const HeaderText = styled.Text`
   color: ${theme.pallete.color};
   font-family: "CircularStd-Medium";
-  font-size: 25px;
+  font-size: 24px;
 `;
 
-const IconsWrapper = styled.View``;
+const IconsWrapper = styled.View`
+  width: 35%;
+  flex-direction: row;
+  justify-content: space-around;
+`;
