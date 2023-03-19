@@ -36,22 +36,28 @@ const data: Playlist[] = [
 export default function Home() {
   return (
     <Layout>
-      <Header />
-      <Filters />
-      <LastPlaylistsWrapper>
-        {data.map((playlist, index) => (
-          <LastPlaylistCard playlist={playlist} key={index} />
-        ))}
-      </LastPlaylistsWrapper>
+      <LeftSpace>
+        <Header />
+        <Filters />
+        <LastPlaylistsWrapper>
+          {data.map((playlist, index) => (
+            <LastPlaylistCard playlist={playlist} key={index} />
+          ))}
+        </LastPlaylistsWrapper>
+      </LeftSpace>
     </Layout>
   );
 }
 
 const LastPlaylistsWrapper = styled.View`
-  padding-left: 5px;
+  /* padding-left: 5px; */
   padding-right: 5px;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+`;
+
+const LeftSpace = styled.View`
+  padding-left: 5px;
 `;

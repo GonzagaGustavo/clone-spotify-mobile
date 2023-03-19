@@ -14,7 +14,7 @@ export default function Filters() {
 const Wrapper = styled.View`
   width: 100%;
   flex-direction: row;
-  padding-left: 5%;
+  padding-left: 5px;
   padding-right: 5%;
   padding-bottom: 5%;
 `;

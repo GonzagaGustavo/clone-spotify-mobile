@@ -24,8 +24,8 @@ const Wrapper = styled.View`
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-bottom: 6%;
 `;
 const HeaderText = styled.Text`

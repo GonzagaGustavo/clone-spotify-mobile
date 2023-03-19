@@ -26,8 +26,8 @@ const TitleWrapper = styled.View`
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
   margin-bottom: 6%;
 `;
 
@@ -39,7 +39,6 @@ const Text = styled.Text`
 
 const InputWrapper = styled.View`
   width: 100%;
-  padding: 0 5%;
 `;
 const InputContainer = styled.View`
   width: 100%;
@@ -47,6 +46,7 @@ const InputContainer = styled.View`
   align-items: center;
   background-color: white;
   border-radius: 4px;
+  padding: 1%;
 `;
 const IconWrapper = styled.View`
   margin: 0 5px;

@@ -7,7 +7,7 @@ export type Pallete = {
 
 const pallete: Pallete = {
   background: "#000",
-  main: "#191414",
+  main: "rgba(51, 51, 51, 0.7)",
   color: "#fff",
   fontFamily: "CircularStd-Black",
 };
