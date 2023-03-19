@@ -1,4 +1,4 @@
-import { AntDesign } from "@expo/vector-icons";
+import { AntDesign, Octicons, Ionicons } from "@expo/vector-icons";
 import React from "react";
 import styled from "styled-components/native";
 import theme from "../../styles/theme";
@@ -7,7 +7,11 @@ export default function Header() {
   return (
     <Wrapper>
       <HeaderText>Good afternoon</HeaderText>
-      <AntDesign name="setting" size={24} color={theme.pallete.color} />
+      <IconsWrapper>
+        <Ionicons name="ios-notifications-outline" size={24} color="black" />
+        <Octicons name="history" size={24} color="black" />
+        <AntDesign name="setting" size={24} color={theme.pallete.color} />
+      </IconsWrapper>
     </Wrapper>
   );
 }
@@ -24,3 +28,5 @@ const HeaderText = styled.Text`
   font-family: "CircularStd-Medium";
   font-size: 25px;
 `;
+
+const IconsWrapper = styled.View``;

@@ -1,35 +1,34 @@
 import React from "react";
 import styled from "styled-components/native";
-import lastPlaylists from "../../assets/images/lastPlaylists";
+import assets from "@/assets";
 import Layout from "../layout";
-import theme from "../styles/theme";
 import Header from "./header";
 import LastPlaylistCard, { Playlist } from "./lastPlaylistCard";
 
 const data: Playlist[] = [
   {
     name: "Hip Hop",
-    img: lastPlaylists.hiphop,
+    img: assets.images.lastPlaylists.hiphop,
   },
   {
     name: "This Is Drake",
-    img: lastPlaylists.thisisdrake,
+    img: assets.images.lastPlaylists.thisisdrake,
   },
   {
     name: "On Repeat",
-    img: lastPlaylists.onrepeat,
+    img: assets.images.lastPlaylists.onrepeat,
   },
   {
     name: "Liked Songs",
-    img: lastPlaylists.liked,
+    img: assets.images.lastPlaylists.liked,
   },
   {
     name: "Electronic",
-    img: lastPlaylists.eletronic,
+    img: assets.images.lastPlaylists.eletronic,
   },
   {
     name: "Till We Drop",
-    img: lastPlaylists.tillwedrop,
+    img: assets.images.lastPlaylists.tillwedrop,
   },
 ];
 
