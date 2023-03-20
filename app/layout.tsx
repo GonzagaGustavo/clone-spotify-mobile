@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 const Body = styled.View`
   padding-top: 15%;
-  /* flex: 1; */
+  padding-bottom: 330px;
   height: 1000px;
   background-color: ${theme.pallete.background};
   font-family: "CircularStd-Medium";

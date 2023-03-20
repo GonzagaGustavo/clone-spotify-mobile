@@ -39,6 +39,7 @@ const Text = styled.Text`
 
 const InputWrapper = styled.View`
   width: 100%;
+  margin: 1% 0;
 `;
 const InputContainer = styled.View`
   width: 100%;

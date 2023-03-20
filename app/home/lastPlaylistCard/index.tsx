@@ -1,5 +1,5 @@
-import React from "react";
-import { Image, ImageSourcePropType } from "react-native";
+import React, { useState } from "react";
+import { Image, ImageSourcePropType, TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 import theme from "../../styles/theme";
 
@@ -13,8 +13,14 @@ type Props = {
 };
 
 export default function LastPlaylistCard({ playlist }: Props) {
+  const [pressed, setPressed] = useState(false);
+
   return (
-    <Wrapper>
+    <Wrapper
+      onPressIn={() => setPressed(true)}
+      onPressOut={() => setPressed(false)}
+      pressed={pressed}
+    >
       <ImageWrapper>
         {playlist.img ? (
           <Image
@@ -35,13 +41,16 @@ export default function LastPlaylistCard({ playlist }: Props) {
   );
 }
 
-const Wrapper = styled.View`
+const Wrapper = styled.TouchableOpacity<{ pressed: boolean }>`
   flex-direction: row;
   height: 50px;
   width: 47%;
   background-color: ${theme.pallete.main};
   border-radius: 4px;
   margin-bottom: 10px;
+
+  transform: scale(${(p) => (p.pressed ? "0.95" : "1")});
+  opacity: ${(p) => (p.pressed ? "0.7" : "1")};
 `;
 
 const ImageWrapper = styled.View`

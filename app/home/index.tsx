@@ -5,6 +5,7 @@ import Layout from "../layout";
 import Header from "./header";
 import LastPlaylistCard, { Playlist } from "./lastPlaylistCard";
 import Filters from "./filters";
+import Content from "./content";
 
 const data: Playlist[] = [
   {
@@ -44,6 +45,8 @@ export default function Home() {
             <LastPlaylistCard playlist={playlist} key={index} />
           ))}
         </LastPlaylistsWrapper>
+
+        <Content />
       </LeftSpace>
     </Layout>
   );
