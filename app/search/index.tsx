@@ -1,8 +1,10 @@
 import { AntDesign } from "@expo/vector-icons";
 import React from "react";
+import { ScrollView } from "react-native";
 import styled from "styled-components/native";
 import Layout from "../layout";
 import theme from "../styles/theme";
+import { explore } from "./data";
 import ExploreCard from "./exploreCard";
 import HeaderSearch from "./header";
 
@@ -11,14 +13,13 @@ export default function Search() {
     <Layout>
       <PaddingX>
         <HeaderSearch />
-
-        <ExploreWrapper>
-          <ExploreCard />
-          <ExploreCard />
-          <ExploreCard />
-          <ExploreCard />
-          <ExploreCard />
-        </ExploreWrapper>
+        <ScrollView>
+          <ExploreWrapper>
+            {explore.map((exploreItem, index) => (
+              <ExploreCard key={index} explore={exploreItem} />
+            ))}
+          </ExploreWrapper>
+        </ScrollView>
       </PaddingX>
     </Layout>
   );

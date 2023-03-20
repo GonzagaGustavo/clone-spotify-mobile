@@ -6,7 +6,11 @@ import assets from "@/assets";
 
 const windowSize: string = (Dimensions.get("window").width / 2).toFixed(0);
 
-export default function ExploreCard() {
+type Props = {
+  explore: { name: string; img: any };
+};
+
+export default function ExploreCard({ explore }: Props) {
   const [pressed, setPressed] = useState<boolean>(false);
 
   return (
@@ -15,9 +19,9 @@ export default function ExploreCard() {
       onPressOut={() => setPressed(false)}
     >
       <Wrapper pressed={pressed}>
-        <Title>Podcasts</Title>
+        <Title>{explore.name}</Title>
         <ImageWrapper>
-          <Image source={assets.images.search[1]} />
+          <Image source={explore.img} />
         </ImageWrapper>
       </Wrapper>
     </TouchableOpacity>
